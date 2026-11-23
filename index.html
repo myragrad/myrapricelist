@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Myra Grad | Graduation Photography</title>
+<meta name="description" content="Jasa foto wisuda personal, couple, dan group. Clean, natural, dan berkarakter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f5f7;--card:rgba(255,255,255,.72);--sol:#fff;--ink:#111113;--mut:#6b6b72;--line:rgba(0,0,0,.08);--acc:var(--accL,#2F4A24);--on:#fff;--r:24px;color-scheme:light}
+[data-theme=dark]{--bg:#000;--card:rgba(28,28,30,.72);--sol:#1c1c1e;--ink:#f5f5f7;--mut:#9a9aa2;--line:rgba(255,255,255,.1);--acc:var(--accD,#9BC58A);--on:#0b1a07;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Inter,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom)}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h1{font-size:clamp(38px,8vw,76px);line-height:1.02;letter-spacing:-.035em;font-weight:800}
+h2{font-size:clamp(26px,4.5vw,40px);letter-spacing:-.03em;font-weight:700;line-height:1.1}
+.sub{color:var(--mut);margin-top:8px;max-width:560px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:14px}
+nav{position:sticky;top:0;z-index:50;padding-top:env(safe-area-inset-top);background:var(--card);-webkit-backdrop-filter:saturate(180%) blur(22px);backdrop-filter:saturate(180%) blur(22px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.logo{font-weight:800;letter-spacing:-.02em;text-decoration:none}
+.links{display:flex;gap:20px;font-size:14px;font-weight:500}
+.links a{text-decoration:none;color:var(--mut)}.links a:hover{color:var(--ink)}
+.ic{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--card);cursor:pointer;font-size:16px;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;background:var(--acc);color:var(--on);font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,opacity .2s;font-family:inherit}
+.btn:active{transform:scale(.96)}.btn:hover{opacity:.9}
+.btn.ghost{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.glass{background:var(--card);-webkit-backdrop-filter:blur(22px);backdrop-filter:blur(22px);border:1px solid var(--line);border-radius:var(--r)}
+.promo{background:var(--acc);color:var(--on);text-align:center;font-size:14px;font-weight:500;padding:9px 16px}
+.hero{padding:72px 0 28px}.hero p{font-size:clamp(17px,2.4vw,21px);color:var(--mut);max-width:560px;margin:18px 0 28px}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.show{overflow:hidden;margin-top:28px}
+.trk{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 max(20px,calc((100vw - 1040px)/2));scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.trk::-webkit-scrollbar{display:none}
+figure{flex:0 0 min(78vw,360px);aspect-ratio:3/4;border-radius:var(--r);overflow:hidden;scroll-snap-align:center;position:relative;background:var(--sol)}
+figure img{width:100%;height:100%;object-fit:cover}
+figcaption{position:absolute;left:12px;bottom:12px;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:500;background:rgba(0,0,0,.45);color:#fff;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.seg{display:inline-flex;padding:4px;border-radius:999px;background:var(--card);border:1px solid var(--line);margin:22px 0 8px;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}
+.seg button{border:0;background:none;color:var(--mut);padding:9px 20px;border-radius:999px;font:600 14px inherit;font-family:inherit;cursor:pointer;transition:.25s}
+.seg button.on{background:var(--acc);color:var(--on)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:16px;margin-top:20px}
+.pk{padding:24px;display:flex;flex-direction:column;gap:14px}
+.pk h3{font-size:30px;letter-spacing:-.03em;line-height:1}
+.pill{display:inline-block;padding:5px 12px;border-radius:999px;background:var(--acc);color:var(--on);font-size:12px;font-weight:600;align-self:flex-start}
+.price{font-size:24px;font-weight:700;letter-spacing:-.02em}.price small{font-size:13px;color:var(--mut);font-weight:500}
+.pk ul{list-style:none;padding:0;display:grid;gap:7px;font-size:14px;flex:1}
+.pk li::before{content:"→ ";color:var(--acc);font-weight:700}
+.ph{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.ph img{width:76px;height:96px;object-fit:cover;border-radius:14px;cursor:zoom-in;flex:none}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:24px}
+.step{padding:22px}.step b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--acc);color:var(--on);margin-bottom:12px}
+.step h4{font-size:17px;margin-bottom:4px}.step p{font-size:14px;color:var(--mut)}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+details summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+details summary::after{content:"+";color:var(--acc);font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{color:var(--mut);margin-top:10px;font-size:15px}
+.box{padding:8px 24px;margin-top:20px}
+.rg{padding:22px 24px;margin-top:14px}.rg h4{margin-bottom:6px}
+.rg ol{padding-left:20px;display:grid;gap:8px;color:var(--mut);font-size:15px}
+.calc{padding:26px;display:grid;gap:16px;margin-top:22px}
+.calc label{font-size:13px;color:var(--mut);font-weight:600;display:block;margin-bottom:6px}
+.calc select,.calc input{width:100%;padding:13px 16px;border-radius:14px;border:1px solid var(--line);background:var(--sol);color:var(--ink);font:500 15px inherit;font-family:inherit}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.stp{display:flex;align-items:center;gap:12px}.stp button{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--sol);color:var(--ink);font-size:18px;cursor:pointer}
+.tot{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);padding-top:16px}
+.tot strong{font-size:30px;letter-spacing:-.03em}
+.sm{font-size:13px;color:var(--mut)}
+.tg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:22px}.tg .glass{padding:22px}
+.cta2{text-align:center;padding:48px 24px}.cta2 .cta{justify-content:center;margin-top:20px}
+footer{padding:36px 0 110px;text-align:center;color:var(--mut);font-size:13px}
+footer .l{display:flex;gap:18px;justify-content:center;margin:12px 0;flex-wrap:wrap}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:60;box-shadow:0 8px 28px rgba(0,0,0,.25)}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;place-items:center;z-index:100;padding:20px;cursor:zoom-out}
+.lb.on{display:grid}.lb img{max-height:92vh;border-radius:16px}
+.msg{padding:120px 20px;text-align:center;color:var(--mut)}
+.fade{opacity:0;transform:translateY(14px);transition:.7s}.fade.in{opacity:1;transform:none}
+@media(max-width:700px){.links{display:none}section{padding:44px 0}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top" id="brand">Myra Grad</a><div class="links" id="links"></div><button class="ic" id="tg" aria-label="Ganti tema">◐</button></div></nav>
+<div id="promo"></div>
+<main id="app"><div class="msg">Memuat…</div></main>
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+/* ====== GANTI HANYA JIKA URL DEPLOY BERUBAH ====== */
+const API = "https://script.google.com/macros/s/AKfycbxuYnHQ-6c7IJb0PdaybZzlwNh4_JyqQlM3js2NV8MjY7VszvQC-eqCBDQwfyRbfDbWuA/exec";
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt = n => new Intl.NumberFormat('id-ID').format(n);
+let D, T, S, cat, sel, qty = {}, km = 0;
+const t = (k, d = '') => esc(T[k] ?? d);
+const money = n => esc(S.currency_prefix || 'IDR') + ' ' + fmt(n);
+const wa = m => S.wa_link ? S.wa_link + '?text=' + encodeURIComponent(m) : '#';
+const store = (k, v) => { try { return v === undefined ? localStorage.getItem(k) : localStorage.setItem(k, v); } catch (e) {} };
+
+function theme() {
+  const m = store('th') || (S && S.theme_default) || 'auto';
+  const dark = m === 'dark' || (m === 'auto' && matchMedia('(prefers-color-scheme:dark)').matches);
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+}
+$('#tg').onclick = () => { store('th', document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'); theme(); };
+theme();
+
+function load() {
+  const cached = store('myra_data');
+  if (cached) { try { D = JSON.parse(cached); render(); } catch (e) {} }
+  fetch(API).then(r => r.json()).then(j => {
+    if (j.error) throw new Error(j.error);
+    store('myra_data', JSON.stringify(j));
+    const first = !D; D = j;
+    if (first) render();
+  }).catch(e => {
+    if (!D) $('#app').innerHTML = '<div class="msg"><h2>Data belum bisa dimuat</h2><p class="sub" style="margin:10px auto">Coba muat ulang halaman. Kalau masih gagal, hubungi admin.</p><p><button class="btn" onclick="location.reload()" style="margin-top:18px">Muat ulang</button></p></div>';
+    console.error(e);
+  });
+}
+
+function render() {
+  T = D.texts || {}; S = D.settings || {};
+  const r = document.documentElement.style;
+  if (S.accent_light) r.setProperty('--accL', S.accent_light);
+  if (S.accent_dark) r.setProperty('--accD', S.accent_dark);
+  theme();
+  document.title = (S.brand_name || 'Myra Grad') + ' | ' + (S.tagline || 'Graduation Photography');
+  $('#brand').textContent = S.brand_name || 'Myra Grad';
+  $('#links').innerHTML = [['gallery','nav_gallery','Karya'],['packages','nav_packages','Paket'],['process','nav_process','Alur'],['rules','nav_rules','Ketentuan'],['faq','nav_faq','FAQ']]
+    .map(x => `<a href="#${x[0]}">${t(x[1], x[2])}</a>`).join('');
+  $('#promo').innerHTML = S.promo_active && S.promo_text ? `<div class="promo">${esc(S.promo_text)}</div>` : '';
+  cat = D.categories[0]; sel = D.packages[0] && D.packages[0].id;
+
+  const ss = D.slideshow || [];
+  const steps = [1,2,3,4].filter(i => T['step' + i + '_title']);
+  const ig = S.instagram, tk = S.tiktok;
+  $('#app').innerHTML = `
+  <section class="hero" id="top"><div class="wrap fade">
+    <div class="eyebrow">${t('hero_eyebrow')}</div><h1>${t('hero_title')}</h1>
+    <p>${t('hero_subtitle')}</p>
+    <div class="cta"><a class="btn" href="#packages">${t('hero_cta_primary','Lihat Paket')}</a><a class="btn ghost" href="${wa(S.wa_msg_general || '')}" target="_blank" rel="noopener">${t('hero_cta_secondary','Chat Admin')}</a></div>
+  </div></section>
+  ${ss.length ? `<section id="gallery" style="padding-top:8px"><div class="wrap fade"><h2>${t('gallery_title')}</h2><p class="sub">${t('gallery_subtitle')}</p></div>
+    <div class="show"><div class="trk" id="trk">${ss.map(x => `<figure><img loading="lazy" src="${x.url}" alt="${esc(x.caption || x.name)}" data-big="${x.url}">${x.caption ? `<figcaption>${esc(x.caption)}</figcaption>` : ''}</figure>`).join('')}</div></div></section>` : ''}
+  <section id="about"><div class="wrap fade"><div class="glass" style="padding:32px"><h2>${t('about_title')}</h2>
+    <p class="sub" style="max-width:640px">${t('about_p1')}</p><p class="sub" style="max-width:640px">${t('about_p2')}</p><p class="sub" style="max-width:640px">${t('about_p3')}</p>
+    <p style="margin-top:16px;font-weight:600">${t('about_signature')}</p>${S.brand_former ? `<p class="sm" style="margin-top:4px">${esc(S.brand_former)}</p>` : ''}</div></div></section>
+  <section id="packages"><div class="wrap fade"><h2>${t('packages_title','Pilih Paket')}</h2><p class="sub">${t('packages_subtitle')}${S.price_update ? ' · Update ' + esc(S.price_update) : ''}</p>
+    <div class="seg" id="seg">${D.categories.map(c => `<button data-c="${esc(c)}" class="${c === cat ? 'on' : ''}">${t('tab_' + c.toLowerCase(), c)}</button>`).join('')}</div>
+    <p class="sm" id="cdesc"></p><div class="grid" id="pg"></div>
+    <div class="sm" id="ex" style="margin-top:18px"></div></div></section>
+  <section id="calc"><div class="wrap fade"><h2>${t('calc_title')}</h2><p class="sub">${t('calc_subtitle')}</p><div class="glass calc" id="cbox"></div></div></section>
+  ${steps.length ? `<section id="process"><div class="wrap fade"><h2>${t('process_title','Alur Booking')}</h2><div class="steps">${steps.map(i => `<div class="glass step"><b>${i}</b><h4>${t('step' + i + '_title')}</h4><p>${t('step' + i + '_desc')}</p></div>`).join('')}</div></div></section>` : ''}
+  <section id="rules"><div class="wrap fade"><h2>${t('rules_title','Ketentuan')}</h2><p class="sub">${t('rules_subtitle')}</p>
+    ${D.rules.map(g => `<div class="glass rg"><h4>${esc(g.group)}</h4><ol>${g.items.map(i => `<li>${esc(i)}</li>`).join('')}</ol></div>`).join('')}</div></section>
+  ${D.testimonials.length ? `<section id="testi"><div class="wrap fade"><h2>${t('testi_title')}</h2><div class="tg">${D.testimonials.map(x => `<div class="glass"><p>“${esc(x.text)}”</p><p class="sm" style="margin-top:12px"><b>${esc(x.name)}</b>${x.meta ? ' · ' + esc(x.meta) : ''}</p></div>`).join('')}</div></div></section>` : ''}
+  ${D.faq.length ? `<section id="faq"><div class="wrap fade"><h2>${t('faq_title','FAQ')}</h2><div class="glass box">${D.faq.map(f => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}</div></div></section>` : ''}
+  <section><div class="wrap fade"><div class="glass cta2"><h2>${t('cta_title')}</h2><p class="sub" style="margin:8px auto 0">${t('cta_subtitle')}</p><div class="cta"><a class="btn" href="${wa(S.wa_msg_general || '')}" target="_blank" rel="noopener">${t('cta_button','Chat via WhatsApp')}</a></div></div></div></section>
+  <footer><div class="wrap"><b>${esc(S.brand_full || '')}</b><div>${esc(S.footer_tagline || '')}</div>
+    <div class="l">${ig ? `<a href="https://instagram.com/${esc(ig)}" target="_blank" rel="noopener">Instagram</a>` : ''}${tk ? `<a href="https://tiktok.com/@${esc(tk)}" target="_blank" rel="noopener">TikTok</a>` : ''}${S.email ? `<a href="mailto:${esc(S.email)}">${esc(S.email)}</a>` : ''}</div>
+    <div>${t('footer_note')}</div></div></footer>
+  <a class="btn fab" href="${wa(S.wa_msg_general || '')}" target="_blank" rel="noopener">${t('floating_wa_label','Chat Admin')}</a>`;
+
+  $('#seg').onclick = e => { const b = e.target.closest('button'); if (!b) return; cat = b.dataset.c; document.querySelectorAll('#seg button').forEach(x => x.classList.toggle('on', x === b)); drawPk(); };
+  drawPk(); drawCalc(); slider(); reveal();
+}
+
+function drawPk() {
+  $('#cdesc').textContent = T['cat_' + cat.toLowerCase() + '_desc'] || '';
+  $('#pg').innerHTML = D.packages.filter(p => p.category === cat).map(p => `
+    <article class="glass pk">
+      ${p.badge ? `<span class="pill">${esc(p.badge)}</span>` : ''}
+      <div><h3>${esc(p.name)}</h3><div class="sm" style="margin-top:6px">${esc(p.tagline)}</div></div>
+      <div class="price">${money(p.price)}<br><small>${esc(p.duration)}</small></div>
+      ${p.photos.length ? `<div class="ph">${p.photos.map(x => `<img loading="lazy" src="${x.thumb}" data-big="${x.url}" alt="Contoh ${esc(p.name)}">`).join('')}</div>` : ''}
+      <ul>${p.features.map(f => `<li>${esc(f)}</li>`).join('')}</ul>
+      <a class="btn" target="_blank" rel="noopener" href="${wa((S.wa_msg_package || '').replace('{paket}', p.name + ' - ' + p.tagline).replace('{kategori}', p.category))}">${t('btn_book','Booking via WhatsApp')}</a>
+    </article>`).join('');
+  const ex = D.extras.filter(e => e.appliesTo === 'Semua' || e.appliesTo === cat);
+  $('#ex').innerHTML = ex.map(e => `<b>${esc(e.name)}</b> ${money(e.price)} / ${esc(e.unit)}`).join(' &nbsp;·&nbsp; ');
+}
+
+function drawCalc() {
+  const p = D.packages.find(x => x.id === sel) || D.packages[0];
+  if (!p) return;
+  const ex = D.extras.filter(e => e.calc && (e.appliesTo === 'Semua' || e.appliesTo === p.category));
+  let total = p.price; const parts = [p.name];
+  ex.forEach(e => { const q = qty[e.id] || 0; if (q) { total += q * e.price; parts.push(q + 'x ' + e.name); } });
+  const tr = S.transport_per_km || 0;
+  if (km > 0 && tr) { total += km * tr; parts.push(km + ' km transport'); }
+  $('#cbox').innerHTML = `
+    <div><label>Paket</label><select id="cs">${D.categories.map(c => `<optgroup label="${esc(c)}">${D.packages.filter(x => x.category === c).map(x => `<option value="${esc(x.id)}" ${x.id === p.id ? 'selected' : ''}>${esc(x.name)} · ${esc(x.tagline)} · ${fmt(x.price)}</option>`).join('')}</optgroup>`).join('')}</select></div>
+    ${ex.map(e => `<div class="row"><div><b>${esc(e.name)}</b><div class="sm">${money(e.price)} / ${esc(e.unit)}</div></div><div class="stp"><button data-e="${esc(e.id)}" data-d="-1" aria-label="Kurangi">−</button><b>${qty[e.id] || 0}</b><button data-e="${esc(e.id)}" data-d="1" aria-label="Tambah">+</button></div></div>`).join('')}
+    ${tr ? `<div><label>Jarak sesi dari kampus/venue (km), kosongkan jika di area kampus</label><input id="ck" type="number" min="0" inputmode="decimal" value="${km || ''}" placeholder="0"></div>` : ''}
+    <div class="tot"><span class="sm">${t('calc_total_label','Estimasi total')}</span><strong>${money(total)}</strong></div>
+    <p class="sm">${t('calc_note')}</p>
+    <a class="btn" target="_blank" rel="noopener" href="${wa((S.wa_msg_calc || '').replace('{ringkasan}', parts.join(', ')).replace('{total}', money(total).replace(/&nbsp;/g, ' ')))}">${t('btn_book','Booking via WhatsApp')}</a>`;
+  $('#cs').onchange = e => { sel = e.target.value; qty = {}; drawCalc(); };
+  document.querySelectorAll('#cbox [data-e]').forEach(b => b.onclick = () => { const k = b.dataset.e; qty[k] = Math.max(0, (qty[k] || 0) + +b.dataset.d); drawCalc(); });
+  const ck = $('#ck'); if (ck) ck.onchange = () => { km = Math.max(0, parseFloat(ck.value) || 0); drawCalc(); };
+}
+
+let timer;
+function slider() {
+  const trk = $('#trk'); clearInterval(timer); if (!trk) return;
+  let pause = false;
+  ['pointerdown', 'mouseenter', 'touchstart'].forEach(ev => trk.addEventListener(ev, () => pause = true, { passive: true }));
+  ['mouseleave', 'touchend'].forEach(ev => trk.addEventListener(ev, () => setTimeout(() => pause = false, 3000), { passive: true }));
+  timer = setInterval(() => {
+    if (pause || document.hidden) return;
+    const w = trk.firstElementChild.offsetWidth + 14;
+    if (trk.scrollLeft + trk.clientWidth >= trk.scrollWidth - 10) trk.scrollTo({ left: 0, behavior: 'smooth' });
+    else trk.scrollBy({ left: w, behavior: 'smooth' });
+  }, 3800);
+}
+
+function reveal() {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .08 });
+  document.querySelectorAll('.fade').forEach(el => io.observe(el));
+}
+
+document.addEventListener('click', e => {
+  const im = e.target.closest('[data-big]');
+  if (im) { $('#lb img').src = im.dataset.big; $('#lb').classList.add('on'); }
+});
+$('#lb').onclick = () => $('#lb').classList.remove('on');
+document.addEventListener('keydown', e => { if (e.key === 'Escape') $('#lb').classList.remove('on'); });
+
+load();
+</script>
+</body>
+</html>
