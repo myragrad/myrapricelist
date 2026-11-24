@@ -382,6 +382,49 @@ html.ld,html.ld body{overflow:hidden}
 .fsw{margin-bottom:.2rem}.fst{display:flex;gap:.4rem;margin:.2rem 0 .8rem}
 .fst select{flex:1;min-width:0;padding:.45rem .6rem;border-radius:10px;border:1px solid var(--line);background:var(--bg2)}
 .fst .ibtn{flex:none}.fst .ibtn.on{background:var(--ac);color:var(--on)}
+</style>
+<style>
+/* ===== REVISI 5: popup lebih ringkas, tombol rapi, kartu paket tampil lengkap ===== */
+/* kartu paket: semua deskripsi tampil */
+.pc .feat{font-size:.84rem;gap:.4rem;padding-top:.1rem}
+.pc .feat li{line-height:1.38}
+.pc-b{gap:.7rem}
+.pc-tag{font-size:.86rem}
+.pc-f{font-size:.86rem}
+/* popup detail */
+.sheet{max-width:500px}
+.sh-body{padding:0 1.15rem .6rem}
+.sh-photos{gap:.45rem;margin:.3rem -1.15rem .8rem;padding:0 1.15rem}
+.sh-photos img{border-radius:16px}
+.sh-top h3{font-size:1.4rem}
+.sh-sub{font-size:.85rem;margin-top:.15rem}
+.sh-price{font-size:1.35rem;margin:.6rem 0 .1rem}
+.sh-dur{font-size:.8rem}
+.sh-list{border-radius:16px;padding:.15rem .9rem;margin:.75rem 0}
+.sh-list .feat{font-size:.85rem}
+.sh-list .feat li{padding:.48rem 0}
+.sh-note{font-size:.76rem;gap:.3rem}
+.sh-foot{grid-template-columns:1fr 1fr;gap:.45rem;padding:.7rem 1.15rem calc(.8rem + env(safe-area-inset-bottom,0px))}
+.sh-foot .btn{padding:.7rem .8rem;font-size:.85rem}
+.sh-foot a.btn,.sh-foot button:only-of-type{grid-column:1/-1}
+.sh-foot a.btn{padding:.8rem;font-size:.92rem}
+.sh-top .ibtn.x{width:2.1rem;height:2.1rem;font-size:.95rem}
+@media(min-width:901px){
+ .sh-photos img{height:150px;max-width:70%}
+ .pc .feat{font-size:.83rem}
+}
+@media(max-width:900px){
+ .sh-body{padding:0 1rem .5rem}
+ .sh-photos{margin:.3rem -1rem .8rem;padding:0 1rem;scroll-padding:0 1rem}
+ .sh-photos img{height:auto;aspect-ratio:4/5;width:40%;max-width:150px;border-radius:14px}
+ .sh-top h3{font-size:1.3rem}.sh-price{font-size:1.25rem}
+ .sh-foot{padding:.65rem 1rem calc(.7rem + env(safe-area-inset-bottom,0px))}
+ .pc{flex:0 0 80%;max-width:320px}
+ .pc .feat{font-size:.82rem;gap:.35rem}
+ .pc-img{aspect-ratio:16/11}.pc-img h4{font-size:1.35rem}
+ .pc-b{padding:.95rem 1rem 1rem}
+ .price{font-size:1.2rem}
+}
 </style></head><body>
 <div id="ldr" role="status" aria-label="Memuat"></div>
 <noscript><style>#ldr{display:none}</style></noscript>
@@ -652,10 +695,10 @@ function pcImgs(p){const m=pkKey(S.pk_photo_mode),ph=pkgPhotos(p);
  if(m==='static'||ph.length<2)return `<div class="pc-img"><img src="${coverOf(p)}"${vst((ph[0]||{}).view)} alt="" loading="lazy">`;
  const L=ph.slice(0,6).map((x,i)=>`<img${m==='slide'&&!i?' class="cur"':''} src="${x.thumb||x.url}"${vst(x.view)} alt="" loading="lazy">`).join('');
  return m==='slide'?`<div class="pc-img ss">${L}`:`<div class="pc-img sw"><div class="swi">${L}</div>`}
-function cardH(p){const f=p.features.slice(0,3);
+function cardH(p){const f=p.features;
  return `<button class="pc" data-ed="paket:${esc(p.id)}" onclick="openPkg('${esc(p.id)}')" aria-label="Detail paket ${esc(p.name)}">${pcImgs(p)}${p.badge?`<span class="badge">${esc(p.badge)}</span>`:''}<h4>${esc(p.name)}</h4></div>
  <div class="pc-b"><div class="pc-tag">${esc(p.tagline)}</div><div class="price">${rp(p.price)}</div>
- <ul class="feat">${p.duration?`<li>${ic('clock')}${esc(p.duration)}</li>`:''}${f.map(x=>`<li>${ic('checkc')}${esc(x)}</li>`).join('')}${p.features.length>3?`<li class="more" data-ed="texts:card_more">${esc(tf('card_more',{n:p.features.length-3}))}</li>`:''}</ul>
+ <ul class="feat">${p.duration?`<li>${ic('clock')}${esc(p.duration)}</li>`:''}${f.map(x=>`<li>${ic('checkc')}${esc(x)}</li>`).join('')}</ul>
  <div class="pc-f"><b data-ed="texts:card_detail" style="font-weight:600">${esc(tf('card_detail'))}</b><span data-ed="texts:card_pick">${esc(tf('card_pick'))} ${ic('chr')}</span></div></div></button>`}
 
 /* ---------- popup detail paket & estimasi biaya ---------- */
