@@ -1219,7 +1219,7 @@ window.vaultUrl=vurl;window.vaultOn=VON;
 let VP=[],VS=[],VF=null,VKEY='',VUP=null;const VSEL=new Set();
 document.querySelector('svg defs').insertAdjacentHTML('beforeend','<symbol id="i-folder" viewBox="0 0 24 24"><path d="M3.5 7.5a2 2 0 0 1 2-2h3.7l2 2.2h7.3a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2Z"/></symbol><symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 15V4M7 9l5-5 5 5M4.5 15v2.5a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V15"/></symbol>');
 async function vq(path,m,body,pin,hx){const r=await fetch(SB.url+'/rest/v1/'+path,{method:m||'GET',headers:sbH(Object.assign(body?{'content-type':'application/json'}:{},hx),pin),body:body?JSON.stringify(body):undefined});
- if(!r.ok)throw new Error((await r.text()).slice(0,160));return r.status===204?null:r.json()}
+ if(!r.ok)throw new Error((await r.text()).slice(0,160));if(r.status===204)return null;const tx=await r.text();return tx?JSON.parse(tx):null}
 function vset(a){VP=a;try{localStorage.setItem('myra_vault',JSON.stringify(a))}catch(e){}VS=shuf(a,3).slice(0,32);render()}
 async function vpull(force){if(!VON())return;try{
  if(!force){const v=await vq('rpc/vault_version','POST',{});if(v===VKEY)return;VKEY=v}
